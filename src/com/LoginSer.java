@@ -5,9 +5,11 @@ import java.sql.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 
@@ -274,6 +276,9 @@ public class LoginSer extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			// TODO Auto-generated method stub
 		String pagename = request.getParameter("page");
+		HttpSession session = request.getSession(true);
+		final String USER_NAME  = "userName";
+		String userName = request.getParameter("user");
 		RequestDispatcher rd;
 		System.out.println(pagename);
 		String password,type;
@@ -287,8 +292,11 @@ public class LoginSer extends HttpServlet {
 			{
 				if(db.vloginDB(user,password,type))
 			{	
-			rd= request.getRequestDispatcher("admin.html");
-			rd.forward(request, response);
+					Cookie userCookie = new Cookie(USER_NAME, userName);
+			        userCookie.setMaxAge(5);
+			        response.addCookie(userCookie);
+					rd= request.getRequestDispatcher("admin.html");	
+					rd.forward(request, response);
 			}
 			else 
 			{
@@ -300,7 +308,10 @@ public class LoginSer extends HttpServlet {
 			{
 				if(db.vloginDB(user,password,type))
 			{
-			rd= request.getRequestDispatcher("employ.html");
+					Cookie userCookie = new Cookie(USER_NAME, userName);
+			        userCookie.setMaxAge(5);
+			        response.addCookie(userCookie);
+					rd= request.getRequestDispatcher("employ.html");
 			rd.forward(request, response);
 			}
 			else 

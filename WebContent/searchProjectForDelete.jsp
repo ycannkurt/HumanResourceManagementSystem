@@ -44,7 +44,7 @@
 <form  action="LoginSer"  method="GET">
 <img src="images/sp-project-management-img.png" width="100%" height="131"/>
 <h2 align="center" class="style1"> Proje Kaydini Sil </h2><br>
-<p align="center"><strong>Çalisan TC Kimlik No: 
+<p align="center"><strong>Proje ID: 
   <input type= "text" name = "pid" value = "" />
 </strong> </p>
   <p align="center"><br>

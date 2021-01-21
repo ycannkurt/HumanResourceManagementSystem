@@ -40,28 +40,28 @@ if(cemp.getFname()!=null){
 <%} %>
 <form name="frm" method="get" >
 <img src="images\hrms.png" width="100%" height="124">
-<h2 align="center" class="style1">Yeni Çalisan Ekle</h2>
+<h2 align="center" class="style1">Yeni Çalisan Ekle</h2><br>
 <p align="left">TC Kimlik No :&nbsp;&nbsp;&nbsp;
-  <input type= "text" name = "empid" size = "12">
-<p align="center">Ad :&nbsp;&nbsp;<input type= "text" name = "fname" size = "20">
+  <input type= "text" name = "empid" size = "12"><br>
+<br><p align="center">Ad :&nbsp;&nbsp;<input type= "text" name = "fname" size = "20">
 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-Soyad : <input type= "text" name = "lname" size = "20"> 
-<p align="center">Cinsiyet : <input type= "radio" name="gender" value= "male"> Erkek
-  <input type= "radio" name="gender"  value= "female">Kadin 
-<p align="center">Departman :&nbsp;&nbsp;&nbsp;
+Soyad : <input type= "text" name = "lname" size = "20"><br> 
+<br><p align="center">Cinsiyet : <input type= "radio" name="gender" value= "male"> Erkek
+  <input type= "radio" name="gender"  value= "female">Kadin <br>
+<br><p align="center">Departman :&nbsp;&nbsp;&nbsp;
   <select name="dept" >
      <option>Bilgi Islem</option>
      <option>Personel</option>
     <option>Programci</option>
      <option>Testing</option>
-   </select>
-<p align="center"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Sehir  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-  <input type= "text" name = "city"size = "20" />
-<p align="center">&nbsp;&nbsp; &nbsp;&nbsp;Cep Telefonu : 
+   </select><br>
+<br><p align="center"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Sehir  :&nbsp;&nbsp;
+  <input type= "text" name = "city"size = "20" /><br>
+<br><p align="center">&nbsp;&nbsp; &nbsp;&nbsp;Cep Telefonu : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type= "text" name = "mob" size = "10"/></p>
-<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maas :&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+<br><p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maas :&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
   <input type= "text" name = "salary" size = "10"/></p>
-<p align="center">Kullanici Adi :&nbsp;&nbsp;
+<br><p align="center">Kullanici Adi :&nbsp;&nbsp;
   <input type= "text" name = "user" >
 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
 Sifre : 
